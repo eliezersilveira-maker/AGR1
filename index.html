@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#dados">Dados & Gráficos</a></li>
+                <li><a href="#desafios">Desafios</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="btn-theme"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Produzir alimentos e proteger a natureza não são caminhos opostos, mas forças que caminham de mãos dadas.</p>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h2 class="counter" data-target="24">0</h2>
+                    <p>% do PIB Nacional</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Milhões</h2>
+                    <p>de famílias alimentadas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados" class="container">
+        <div class="section-title">
+            <h2>Indicadores de Impacto</h2>
+            <p>A transição necessária para a segurança econômica e ambiental do país.</p>
+        </div>
+        <div class="dashboard-grid">
+            <div class="chart-container">
+                <h3>Participação no PIB e Metas de Sustentabilidade</h3>
+                <canvas id="agroChart"></canvas>
+            </div>
+            <div class="info-image-box">
+                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad451?q=80&w=600&auto=format&fit=crop" alt="Plantação Sustentável" class="side-img">
+                <p class="img-caption">Tecnologias poupa-terra evitam a abertura de novas áreas de vegetação nativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="desafios" class="container bg-light">
+        <div class="section-title">
+            <h2>Os Desafios do Tempo</h2>
+            <p>O impacto das mudanças climáticas na vida de quem alimenta o mundo.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-cloud-sun-rain card-icon"></i>
+                <h3>Clima Imprevisível</h3>
+                <p>Secas severas e chuvas fora de época ameaçam o trabalho de uma vida inteira e o sustento no campo.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-seedling card-icon"></i>
+                <h3>Herança Antiga</h3>
+                <p>O modelo antigo de desmatamento e esgotamento do solo hoje cobra o seu preço diretamente na produtividade.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe-europe card-icon"></i>
+                <h3>Exigência Global</h3>
+                <p>Mercados internacionais, como o bloco europeu, fecham as portas para a destruição e valorizam quem cuida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="container">
+        <div class="tech-section">
+            <div class="tech-text">
+                <h2>Tecnologia Humanizada</h2>
+                <p>A inteligência e a ciência unidas para fazer a terra render mais e melhor, devolvendo a vida a solos antes castigados.</p>
+                <ul class="tech-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>ILPF:</strong> Integração Lavoura-Pecuária-Floresta.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Recuperação:</strong> Pastagens degradadas ganham nova vida.</li>
+                </ul>
+            </div>
+            <div class="tech-interactive">
+                <h3>Simulador de Impacto</h3>
+                <p>Veja a diferença entre a produção antiga e a sustentável:</p>
+                <button onclick="simularImpacto('antigo')" class="btn btn-danger">Modelo Antigo</button>
+                <button onclick="simularImpacto('sustentavel')" class="btn btn-success">Modelo Sustentável</button>
+                <div id="resultado-simulacao" class="resultado-box">Clique em um dos modelos acima para analisar.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Plantando inovação, colhendo o futuro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
